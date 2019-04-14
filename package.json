@@ -1,6 +1,6 @@
 {
   "name": "bitbucket-url-from-git",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parse a bitbucket git url and return the bitbucket repo url",
   "main": "index.js",
   "scripts": {
