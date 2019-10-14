@@ -1,7 +1,7 @@
-// convert git:// form url to github URL, e.g.,
-// git://github.com/bcoe/foo.git
-// https://github.com/bcoe/foo.
-function githubUrlFromGit (url, opts) {
+// convert git:// form url to bitbucket URL, e.g.,
+// git://bitbucket.com/bcoe/foo.git
+// https://bitbucket.com/bcoe/foo.
+function bitbucketUrlFromGit (url, opts) {
   try {
     var urlNoExt = url.replace(/\.git(#.*)?$/, '')
     var snippetMatch = snippetRe(opts).exec(urlNoExt)
@@ -46,4 +46,4 @@ function snippetRe (opts) {
   )
 }
 
-module.exports = githubUrlFromGit
+module.exports = bitbucketUrlFromGit

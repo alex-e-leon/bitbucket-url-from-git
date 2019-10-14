@@ -37,7 +37,7 @@ describe('parse(url)', function () {
     parse(url).should.eql('https://bitbucket.org/alex-e-leon/node-bitbucket-url-from-git')
   })
 
-  it('should parse git@github.com:bcoe/thumbd.git#2.7.0', function () {
+  it('should parse git@bitbucket.com:bcoe/thumbd.git#2.7.0', function () {
     var url = 'git@bitbucket.org:alex-e-leon/node-bitbucket-url-from-git.git#2.7.0'
     parse(url).should.eql('https://bitbucket.org/alex-e-leon/node-bitbucket-url-from-git')
   })
